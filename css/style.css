@@ -120,6 +120,26 @@ li {
   letter-spacing: .05em;
 }
 
+.sub-title-area {
+  margin-bottom: 8px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 15px;
+  letter-spacing: .05em;
+}
+
+h3.sub-title {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
 .section-image a {
   display: block;
 }
@@ -273,19 +293,23 @@ li {
  WORKS
 ---------------------------------*/
 
-#works .card {
+#works .card,
+#study .card {
   flex-basis: 31%;
   margin-bottom: 60px;
 }
 
-#works .card-wrapper::after {
+#works .card-wrapper::after,
+#study .card-wrapper::after {
   display: block;
   flex-basis: 31%;
   content: "";
 }
 
 #works .card:nth-child(3n+1):nth-last-child(-n+3),
-#works .card:nth-child(3n+1):nth-last-child(-n+3)~div {
+#works .card:nth-child(3n+1):nth-last-child(-n+3)~div,
+#study .card:nth-child(3n+1):nth-last-child(-n+3),
+#study .card:nth-child(3n+1):nth-last-child(-n+3)~div {
   margin-bottom: 0;
 }
 
